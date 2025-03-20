@@ -13,11 +13,13 @@ app.use(cors());
 
 // Import Routes
 const authRoutes = require("./routes/auth.routes");
+const usersRoutes = require("./routes/users.routes");
 const serviceRoutes = require("./routes/services.routes");
 const orderRoutes = require("./routes/orders.routes");
 
 // Gunakan Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/users", usersRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api/orders", orderRoutes);
 
